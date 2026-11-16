@@ -1,0 +1,14 @@
+{
+  "name": "detektiv-obrazu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vzdělávací hra pro kritické zkoumání skutečných a AI obrázků.",
+  "engines": { "node": ">=22.9.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "dev": "node --watch --env-file-if-exists=.env server.mjs",
+    "test": "node --test",
+    "check": "node --check server.mjs && node --check lib/evaluate.mjs && node --check app.js"
+  }
+}
